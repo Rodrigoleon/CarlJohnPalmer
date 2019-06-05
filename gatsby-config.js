@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    title: `Carl John Palmer - Show Host`,
+    description: `YouTube and Podcast host of shows like Cults Coffer & Conversation, The Great Inquisition, and many more.`,
+    author: `@carljpalmer`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -31,4 +31,4 @@ module.exports = {
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
   ],
-}
+};
