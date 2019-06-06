@@ -1,10 +1,13 @@
+import { createGlobalStyle } from 'styled-components';
+
+const GlobalStyle = createGlobalStyle`
 /*!
- * Bootstrap Reboot v4.3.1 (https://getbootstrap.com/)
- * Copyright 2011-2019 The Bootstrap Authors
- * Copyright 2011-2019 Twitter, Inc.
- * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
- * Forked from Normalize.css, licensed MIT (https://github.com/necolas/normalize.css/blob/master/LICENSE.md)
- */
+* Bootstrap Reboot v4.3.1 (https://getbootstrap.com/)
+* Copyright 2011-2019 The Bootstrap Authors
+* Copyright 2011-2019 Twitter, Inc.
+* Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+* Forked from Normalize.css, licensed MIT (https://github.com/necolas/normalize.css/blob/master/LICENSE.md)
+*/
 *,
 *::before,
 *::after {
@@ -346,4 +349,38 @@ template {
 [hidden] {
   display: none !important;
 }
-/*# sourceMappingURL=bootstrap-reboot.css.map */
+
+/* // Bootstrap */
+
+/* 
+Base Classes
+*/
+
+.d-flex {
+  display: flex;
+}
+
+.justify-content-end {
+  justify-content: flex-end;
+}
+
+.unstyled-ul {
+  list-style: none;
+}
+
+.m-0 {
+  margin: 0;
+}
+
+.p-0 {
+  padding: 0;
+}
+
+.system-output{
+  min-height: 50vh;
+  padding: 4rem 0;
+}
+
+`;
+
+export default GlobalStyle;
