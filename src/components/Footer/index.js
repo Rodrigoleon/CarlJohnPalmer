@@ -4,7 +4,7 @@ import React from 'react';
 import FooterWrap from './styles';
 
 const Footer = () => (
-  <FooterWrap>
+  <FooterWrap className="text-center">
     © {new Date().getFullYear()}, Built with
     {` `}
     <a href="https://www.gatsbyjs.org">Gatsby</a>

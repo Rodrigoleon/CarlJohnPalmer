@@ -6,7 +6,7 @@ import HeaderWrap from './styles';
 import Nav from '../Nav';
 
 const Header = ({ siteTitle }) => (
-  <HeaderWrap textlight>
+  <HeaderWrap className="container py-4">
     <div>
       <Link to="/">{siteTitle}</Link>
     </div>

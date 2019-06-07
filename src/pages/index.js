@@ -1,19 +1,17 @@
 import React from 'react';
 
 import Layout from '../components/Layout';
-import HeroHome from '../components/HeroHome';
-import Image from '../components/Image';
+import Hero from '../components/Hero';
 import SEO from '../components/SEO';
 
 const IndexPage = () => (
   <Layout home>
     <SEO title="Home" />
-    <HeroHome />
-    <div className="system-output">
-      <div style={{ maxWidth: `300px` }}>
-        <Image />
-      </div>
-    </div>
+    <Hero
+      title="Carl John Palmer"
+      subtitle="Welcome to your new Gatsby site."
+      minHeight="100vh"
+    />
   </Layout>
 );
 
