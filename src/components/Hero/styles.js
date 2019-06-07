@@ -1,7 +1,10 @@
 import styled from 'styled-components';
 
 const HeroWrap = styled.div`
-  background-color: rebeccapurple;
+  ${props =>
+    props.theme.primaryColor
+      ? `background-color: ${props.theme.primaryColor}`
+      : `#222`};
   min-height: 50vh;
   ${props => (props.minHeight ? `min-height: ${props.minHeight}` : ``)};
   padding: 4.6rem 0;

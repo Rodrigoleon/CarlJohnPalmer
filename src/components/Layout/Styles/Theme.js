@@ -1,6 +1,7 @@
 const theme = {
-  primaryColor: 'mediumseagreen',
+  primaryColor: 'rebeccapurple',
   secondaryColor: 'green',
+  successColor: 'mediumseagreen',
   textLight: 'white',
   textDark: '#999',
 };
