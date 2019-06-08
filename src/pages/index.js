@@ -14,7 +14,7 @@ const IndexPage = () => (
       minHeight="100vh"
     />
     <div style={{ maxWidth: `300px` }}>
-      <Image filename="gatsby-astronaut.png" />
+      <Image src="gatsby-astronaut.png" />
     </div>
   </Layout>
 );
