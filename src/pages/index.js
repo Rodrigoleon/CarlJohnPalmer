@@ -3,6 +3,7 @@ import React from 'react';
 import Layout from '../components/Layout';
 import Hero from '../components/Hero';
 import SEO from '../components/SEO';
+import Image from '../components/Image';
 
 const IndexPage = () => (
   <Layout home>
@@ -12,6 +13,9 @@ const IndexPage = () => (
       subtitle="Welcome to your new Gatsby site."
       minHeight="100vh"
     />
+    <div style={{ maxWidth: `300px` }}>
+      <Image filename="gatsby-astronaut.png" />
+    </div>
   </Layout>
 );
 

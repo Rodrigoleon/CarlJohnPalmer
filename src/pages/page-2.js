@@ -17,7 +17,7 @@ const SecondPage = () => (
       <h1>Hi from the second page</h1>
       <p>Welcome to page 2</p>
       <div style={{ maxWidth: `300px` }}>
-        <Image />
+        <Image filename="gatsby-icon.png" />
       </div>
     </div>
   </Layout>

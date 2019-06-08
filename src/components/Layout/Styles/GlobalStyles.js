@@ -1,5 +1,11 @@
 import { createGlobalStyle } from 'styled-components';
 
+// Styled Components
+// https://blog.getty.io/developing-apps-with-styled-components-e9f56cd0f4c5
+// https://github.com/styled-components/styled-components/issues/2510
+// BS
+// https://github.com/twbs/bootstrap/blob/master/dist/css/bootstrap.css
+
 const GlobalStyle = createGlobalStyle`
 
 /* Creating a Global Styles with Utils and Rebot so that all (even Gutenberg) HTML (created by the app or not) can pick up the styling. */
