@@ -15,6 +15,9 @@ module.exports = {
     },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
+    // this (optional) plugin enables Progressive Web App + Offline functionality
+    // To learn more, visit: https://gatsby.dev/offline
+    // `gatsby-plugin-offline`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
@@ -27,8 +30,26 @@ module.exports = {
         icon: `src/media/images/gatsby-icon.png`, // This path is relative to the root of the site.
       },
     },
-    // this (optional) plugin enables Progressive Web App + Offline functionality
-    // To learn more, visit: https://gatsby.dev/offline
-    // `gatsby-plugin-offline`,
+    {
+      // WordPress Plugin
+      resolve: `gatsby-source-wordpress`,
+      options: {
+        // your WordPress source
+        baseUrl: ``,
+        protocol: `https`,
+        // is it hosted on wordpress.com, or self-hosted?
+        hostingWPCOM: false,
+        // does your site use the Advanced Custom Fields Plugin?
+        useACF: false,
+        includedRoutes: [
+          '**/categories',
+          '**/posts',
+          '**/pages',
+          '**/media',
+          '**/tags',
+          '**/taxonomies',
+        ],
+      },
+    },
   ],
 };
