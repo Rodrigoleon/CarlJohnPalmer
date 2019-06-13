@@ -20,3 +20,13 @@ const IndexPage = () => (
 );
 
 export default IndexPage;
+
+// Calling a singular page:
+// {
+//   wordpressPage(slug: {eq: "privacy-policy"}) {
+//     title
+//     content
+//   }
+// }
+// http://localhost:8000/___graphql
+// https://codepen.io/thomasvaeth/pen/EevQPV

@@ -2,7 +2,8 @@ import React from 'react';
 import { graphql } from 'gatsby';
 import PropTypes from 'prop-types';
 //import Img from 'gatsby-image';
-import Layout from '../components/Layouts';
+import Layout from '../components/Layout';
+import Hero from '../components/Hero';
 
 const PostTemplate = ({ data }) => (
   <Layout>
