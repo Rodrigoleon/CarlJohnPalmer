@@ -10,7 +10,10 @@ const Nav = () => (
         <Link to="/">Home</Link>
       </li>
       <li>
-        <Link to="/page-2">Page 2</Link>
+        <Link to="/404">Page 2</Link>
+      </li>
+      <li>
+        <Link to="/posts/hello-world">Hello World</Link>
       </li>
     </ul>
   </NavWrap>
