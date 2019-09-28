@@ -4,16 +4,32 @@ import { Link } from 'gatsby';
 import NavWrap from './styles';
 
 const Nav = () => (
-  <NavWrap>
-    <ul className="list-unstyled d-flex m-0 p-0 justify-content-end">
+  <NavWrap className="d-flex justify-content-end align-items-center">
+    <ul className="list-unstyled d-flex m-0 p-0 align-items-center">
       <li>
-        <Link to="/">Home</Link>
+        <Link to="/" activeClassName="active">
+          Home
+        </Link>
       </li>
       <li>
-        <Link to="/404">Page 2</Link>
+        <Link to="/shows" activeClassName="active">
+          Shows
+        </Link>
       </li>
       <li>
-        <Link to="/posts/hello-world">Hello World</Link>
+        <Link to="/schedule" activeClassName="active">
+          Schedule
+        </Link>
+      </li>
+      <li>
+        <Link to="/about" activeClassName="active">
+          About
+        </Link>
+      </li>
+      <li>
+        <Link to="/contact" activeClassName="active">
+          Contact
+        </Link>
       </li>
     </ul>
   </NavWrap>

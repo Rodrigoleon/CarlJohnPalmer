@@ -2,9 +2,9 @@ import styled from 'styled-components';
 
 // Footer Styles
 
-const FooterWrap = styled.footer`
+const FormWrap = styled.div`
   padding: 2rem 0;
   font-size: 0.8rem;
 `;
 
-export default FooterWrap;
+export default FormWrap;

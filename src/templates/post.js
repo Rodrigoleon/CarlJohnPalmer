@@ -5,8 +5,13 @@ import PropTypes from 'prop-types';
 import Layout from '../components/Layout';
 import Hero from '../components/Hero';
 
+// For tags with icons: https://github.com/gatsbyjs/gatsby/blob/master/examples/using-wordpress/src/components/post-icons.js
+
 const PostTemplate = ({ data }) => (
-  <Layout>
+  <Layout
+    pageId={data.wordpressPost.wordpress_id}
+    pageSlug={data.wordpressPost.slug}
+  >
     <Hero title={data.wordpressPost.title} />
     <div
       className="system-output container"
@@ -27,6 +32,10 @@ export const pageQuery = graphql`
     wordpressPost(id: { eq: $id }) {
       title
       content
+      featured_img_url
+      date(formatString: "MMMM DD, YYYY")
+      wordpress_id
+      slug
     }
     site {
       siteMetadata {

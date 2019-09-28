@@ -1,26 +1,14 @@
 import React from 'react';
 
 import Layout from '../components/Layout';
-import Hero from '../components/Hero';
+import HeroHome from '../components/HeroHome';
 import SEO from '../components/SEO';
-import Image from '../components/Image';
+import imgsrc from '../media/images/homehero.png';
 
 const IndexPage = () => (
   <Layout home>
     <SEO title="Home" />
-    <Hero
-      title="Carl John Palmer"
-      subtitle="Welcome to your new Gatsby site."
-      minHeight="100vh"
-      imageUrl="https://picsum.photos/id/190/1920/1080"
-    />
-    <div className="system-output container">
-      <h1>Hi From This Page</h1>
-      <p>This was Page Two</p>
-      <div style={{ maxWidth: `300px` }}>
-        <Image src="gatsby-astronaut.png" />
-      </div>
-    </div>
+    <HeroHome title="Carl John Palmer" minHeight="100vh" imageUrl={imgsrc} />
   </Layout>
 );
 
@@ -40,3 +28,9 @@ export default IndexPage;
 // }
 // http://localhost:8000/___graphql
 // https://codepen.io/thomasvaeth/pen/EevQPV
+
+// <div className="system-output container">
+//       <div style={{ maxWidth: `300px` }}>
+//         <Image src="gatsby-astronaut.png" />
+//       </div>
+//     </div>

@@ -4,27 +4,26 @@ import { graphql } from 'gatsby';
 import Layout from '../components/Layout';
 import Hero from '../components/Hero';
 
-const PageTemplate = ({ data }) => (
+const ShowTemplate = ({ data }) => (
   <Layout
-    pageId={data.wordpressPage.wordpress_id}
-    pageSlug={data.wordpressPage.slug}
+    pageId={data.wordpressWpShow.wordpress_id}
+    pageSlug={data.wordpressWpShow.slug}
   >
-    <Hero title={data.wordpressPage.title} />
+    <Hero title={data.wordpressWpShow.title} />
     <div
       className="system-output container"
-      dangerouslySetInnerHTML={{ __html: data.wordpressPage.content }}
+      dangerouslySetInnerHTML={{ __html: data.wordpressWpShow.content }}
     />
   </Layout>
 );
 
-export default PageTemplate;
+export default ShowTemplate;
 
-export const pageQuery = graphql`
+export const showQuery = graphql`
   query($id: String!) {
-    wordpressPage(id: { eq: $id }) {
+    wordpressWpShow(id: { eq: $id }) {
       title
       content
-      excerpt
       featured_img_url
       wordpress_id
       slug

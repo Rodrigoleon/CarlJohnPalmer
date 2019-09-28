@@ -19,7 +19,7 @@ import GlobalStyle from './Styles/GlobalStyles';
 import Header from '../Header';
 import Footer from '../Footer';
 
-const Layout = ({ children, home }) => (
+const Layout = ({ children, home, pageId, pageSlug }) => (
   <ThemeProvider theme={theme}>
     <StaticQuery
       query={graphql`
@@ -35,8 +35,20 @@ const Layout = ({ children, home }) => (
         <>
           <GlobalStyle />
           <Header siteTitle={data.site.siteMetadata.title} />
-          <main className={home ? `homepage` : `page`}>{children}</main>
+          <main
+            className={
+              pageSlug && pageId
+                ? `page-slug-${pageSlug} page-id-${pageId}`
+                : `no-id`
+            }
+          >
+            {children}
+          </main>
           <Footer />
+          <link
+            href="https://fonts.googleapis.com/css?family=Nunito|Nunito+Sans:400,700&display=swap"
+            rel="stylesheet"
+          />
         </>
       )}
     />

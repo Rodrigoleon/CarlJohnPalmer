@@ -5,9 +5,12 @@ import FooterWrap from './styles';
 
 const Footer = () => (
   <FooterWrap className="text-center">
-    © {new Date().getFullYear()}, Built with
-    {` `}
-    <a href="https://www.gatsbyjs.org">Gatsby</a>
+    <div>
+      CJP © {new Date().getFullYear()}, Developed by{' '}
+      <a target="_blank" rel="noopener noreferrer" href="https://HTRDesign.net">
+        HTR Design
+      </a>
+    </div>
   </FooterWrap>
 );
 

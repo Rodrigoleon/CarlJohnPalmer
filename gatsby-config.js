@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `Carl John Palmer - Show Host`,
+    title: `Carl John Palmer`,
     description: `YouTube and Podcast host of shows like Cults Coffer & Conversation, The Great Inquisition, and many more.`,
     author: `@carljpalmer`,
   },
@@ -45,6 +45,7 @@ module.exports = {
           '**/categories',
           '**/posts',
           '**/pages',
+          '**/show',
           '**/media',
           '**/tags',
           '**/taxonomies',
