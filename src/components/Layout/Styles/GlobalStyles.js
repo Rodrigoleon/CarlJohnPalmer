@@ -346,7 +346,7 @@ Base Classes
 
 .slanp-up-right{
   clip-path: polygon(0 32%, 100% 0, 100% 100%, 0 100%);
-  margin-top: -127px;
+  margin-top: -136px;
 }
 
 form{

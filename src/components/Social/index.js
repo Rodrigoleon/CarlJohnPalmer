@@ -16,16 +16,32 @@ const Player = () => (
     <a href="#test" target="_blank" rel="noopener noreferrer">
       <FaYoutube />
     </a>
-    <a href="#test" target="_blank" rel="noopener noreferrer">
+    <a
+      href="https://anchor.fm/cultscoffeeconvo"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
       <FaAnchor />
     </a>
-    <a href="#test" target="_blank" rel="noopener noreferrer">
+    <a
+      href="https://open.spotify.com/show/4TED6Sd2hKXQGF5Xy3CWbk"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
       <FaSpotify />
     </a>
-    <a href="#test" target="_blank" rel="noopener noreferrer">
+    <a
+      href="https://www.instagram.com/cultscoffeeconvo/?hl=en"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
       <FaInstagram />
     </a>
-    <a href="#test" target="_blank" rel="noopener noreferrer">
+    <a
+      href="https://www.facebook.com/cultscoffeeconversation/"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
       <FaFacebookF />
     </a>
   </SocialWrap>

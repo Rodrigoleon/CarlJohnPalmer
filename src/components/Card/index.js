@@ -4,7 +4,7 @@ import { Link } from 'gatsby';
 import CardWrap from './styles';
 
 const Card = ({ node }) => (
-  <CardWrap img={node.featured_img_url}>
+  <CardWrap img={node.featured_img_url ? node.featured_img_url.source_url : ''}>
     <header>
       <h2>{node.title}</h2>
     </header>

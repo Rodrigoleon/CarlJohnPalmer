@@ -21,7 +21,9 @@ const ShowPage = () => (
                 slug
                 excerpt
                 type
-                featured_img_url
+                featured_img_url {
+                  source_url
+                }
               }
             }
           }

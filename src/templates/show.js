@@ -24,7 +24,9 @@ export const showQuery = graphql`
     wordpressWpShow(id: { eq: $id }) {
       title
       content
-      featured_img_url
+      featured_img_url {
+        source_url
+      }
       wordpress_id
       slug
     }
