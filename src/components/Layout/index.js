@@ -45,6 +45,10 @@ const Layout = ({ children, home, pageId, pageSlug }) => (
             {children}
           </main>
           <Footer />
+          <link
+            href="https://fonts.googleapis.com/css?family=Nunito|Nunito+Sans:400,700&display=swap"
+            rel="stylesheet"
+          />
         </>
       )}
     />
