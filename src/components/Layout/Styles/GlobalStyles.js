@@ -344,8 +344,7 @@ Base Classes
   font-size: 1.2rem;
 }
 
-.slanp-up-right{
-  clip-path: polygon(0 32%, 100% 0, 100% 100%, 0 100%);
+.under-slant{
   margin-top: -136px;
 }
 

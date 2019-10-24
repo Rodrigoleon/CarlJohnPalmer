@@ -29,6 +29,8 @@ const HeroWrap = styled.div`
     font-weight: bold;
     letter-spacing: 0.4rem;
   }
+  position: relative;
+  z-index: 1;
 `;
 
 export default HeroWrap;

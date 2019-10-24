@@ -34,7 +34,7 @@ const ShowPage = () => (
           <SEO title="Shows" />
           <Hero title="Shows" />
           <div>
-            <div className="row row-no-gap slanp-up-right">
+            <div className="row row-no-gap under-slant">
               {data.allWordpressWpShow.edges.map(({ node }) => (
                 <div key={node.slug} className="col-md-4 col-xs-12 text-center">
                   <Card node={node} />
