@@ -32,7 +32,6 @@ export const pageQuery = graphql`
     wordpressPost(id: { eq: $id }) {
       title
       content
-      featured_img_url
       date(formatString: "MMMM DD, YYYY")
       wordpress_id
       slug

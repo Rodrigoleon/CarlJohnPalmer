@@ -25,7 +25,6 @@ export const pageQuery = graphql`
       title
       content
       excerpt
-      featured_img_url
       wordpress_id
       slug
     }

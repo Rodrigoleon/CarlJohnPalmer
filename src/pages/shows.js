@@ -21,8 +21,17 @@ const ShowPage = () => (
                 slug
                 excerpt
                 type
-                featured_img_url {
-                  source_url
+                featured_media {
+                  localFile {
+                    childImageSharp {
+                      fluid(fit: COVER) {
+                        src
+                        srcSet
+                        srcSetWebp
+                      }
+                    }
+                  }
+                  alt_text
                 }
               }
             }
@@ -47,9 +56,5 @@ const ShowPage = () => (
     />
   </Layout>
 );
-
-// Row:
-//clip-path: polygon(0 32%, 100% 0, 100% 100%, 0 100%);
-//margin-top: -127px;
 
 export default ShowPage;

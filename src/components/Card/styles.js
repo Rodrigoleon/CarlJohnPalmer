@@ -10,17 +10,12 @@ const CardWrap = styled.div`
   flex-wrap: wrap;
   justify-content: center;
   align-content: center;
+  align-items: center; /* Safari Fix */
   text-align: center;
   font-size: 1.4rem;
-  min-height: 420px;
+  min-height: 460px;
   padding-top: 20px;
-  ${props =>
-    props.img
-      ? `background-image: url(${props.img});
-        background-size: cover;
-        background-position:center;
-        color: #ffffff;`
-      : ``};
+  color: #fff;
   & a {
     position: absolute;
     top: 0;
