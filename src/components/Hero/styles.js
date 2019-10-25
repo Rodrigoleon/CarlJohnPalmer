@@ -15,6 +15,7 @@ const HeroWrap = styled.div`
   flex-wrap: wrap;
   justify-content: center;
   align-content: center;
+  align-items: center; /* For Safari */
   text-align: center;
   color: white;
   ${props => (props.image ? `background-image: url(${props.image})` : ``)};

@@ -12,6 +12,7 @@ const HeroHomeWrap = styled.div`
   flex-wrap: wrap;
   justify-content: center;
   align-content: center;
+  align-items: center; /* For Safari */
   color: white;
   ${props =>
     props.image
