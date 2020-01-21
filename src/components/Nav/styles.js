@@ -13,6 +13,16 @@ const NavWrap = styled.nav`
   a.active {
     color: rgba(255, 255, 255, 0.5);
   }
+  @media (max-width: 768px) {
+    ul {
+      background-color: white;
+      /* display: none; */
+      position: absolute;
+    }
+    & a {
+      color: #999;
+    }
+  }
 `;
 
 export default NavWrap;

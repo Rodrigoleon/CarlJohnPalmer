@@ -4,7 +4,9 @@ import fogTwo from '../../media/images/fog-2.png';
 
 const HeroHomeWrap = styled.div`
   min-height: 50vh;
-  ${props => (props.minHeight ? `min-height: ${props.minHeight}` : ``)};
+  @media (min-width: 768px) {
+    ${props => (props.minHeight ? `min-height: ${props.minHeight}` : ``)};
+  }
   padding: 10rem 0;
   position: relative;
   display: flex;
@@ -26,7 +28,9 @@ const HeroHomeWrap = styled.div`
   background-repeat: no-repeat;
   background-position: center top;
   & h1 {
-    font-size: 4.2rem;
+    @media (min-width: 768px) {
+      font-size: 4.2rem;
+    }
     text-align: center;
     margin-bottom: 0;
     ${props =>

@@ -4,11 +4,14 @@ import React from 'react';
 
 import HeaderWrap from './styles';
 import Nav from '../Nav';
+import LogoSVG from '../../media/svg/logo';
 
 const Header = ({ siteTitle }) => (
   <HeaderWrap className="container">
     <div>
-      <Link to="/">{siteTitle}</Link>
+      <Link to="/">
+        <LogoSVG width={50} fill="#fff"></LogoSVG>
+      </Link>
     </div>
     <Nav />
   </HeaderWrap>
