@@ -3,8 +3,9 @@ import fogOne from '../../media/images/fog-1.png';
 import fogTwo from '../../media/images/fog-2.png';
 
 const HeroHomeWrap = styled.div`
-  min-height: 50vh;
+  min-height: 100vh;
   @media (min-width: 768px) {
+    min-height: 50vh;
     ${props => (props.minHeight ? `min-height: ${props.minHeight}` : ``)};
   }
   padding: 10rem 0;
@@ -16,14 +17,17 @@ const HeroHomeWrap = styled.div`
   align-content: center;
   align-items: center; /* For Safari */
   color: white;
-  ${props =>
-    props.image
-      ? `background-image: url(${props.image}), linear-gradient(
+  background-image: linear-gradient(to right, #4f197f, #19647f);
+  @media (min-width: 768px) {
+    ${props =>
+      props.image
+        ? `background-image: url(${props.image}), linear-gradient(
     to right,
     #4F197F,
     #19647F
   );`
-      : ``};
+        : ``};
+  }
   background-size: auto 102%;
   background-repeat: no-repeat;
   background-position: center top;
