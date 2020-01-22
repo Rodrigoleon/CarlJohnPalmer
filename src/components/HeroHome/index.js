@@ -3,6 +3,7 @@ import React from 'react';
 import HeroHomeWrap from './styles';
 import Player from '../Player';
 import Social from '../Social';
+import LogoSVG from '../../media/svg/logo';
 
 const HeroHome = ({ title, subtitle, imageUrl, minHeight }) => (
   <HeroHomeWrap image={imageUrl} minHeight={minHeight}>
@@ -14,7 +15,8 @@ const HeroHome = ({ title, subtitle, imageUrl, minHeight }) => (
     <div className="container hero-float-bottom">
       <Social />
     </div>
-    <div className="container">
+    <div className="container text-center">
+      <LogoSVG width={200} fill="#fff"></LogoSVG>
       <h1>{title}</h1>
       <hr />
       <p>{subtitle}</p>

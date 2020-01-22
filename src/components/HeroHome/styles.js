@@ -51,6 +51,11 @@ const HeroHomeWrap = styled.div`
   & hr {
     border-color: rgba(255, 255, 255, 0.2);
   }
+  & svg {
+    @media (min-width: 768px) {
+      display: none;
+    }
+  }
   & .hero-float-bottom {
     position: absolute;
     bottom: 40px;
@@ -60,9 +65,13 @@ const HeroHomeWrap = styled.div`
     height: auto;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr;
-    grid-template-areas: 'Left Right';
+    text-align: center;
+    @media (min-width: 768px) {
+      text-align: left;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr;
+      grid-template-areas: 'Left Right';
+    }
   }
   & .fog__container {
     position: absolute;
