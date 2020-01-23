@@ -89,14 +89,14 @@ const HeroHomeWrap = styled.div`
   }
   & .fog__img--first {
     background: url(${fogOne}) repeat-x;
-    background-size: contain;
+    background-size: auto 100%;
     background-position: center;
     -webkit-animation: marquee 400s linear infinite;
     animation: marquee 400s linear infinite;
   }
   & .fog__img--second {
     background: url(${fogTwo}) repeat-x;
-    background-size: contain;
+    background-size: auto 100%;
     background-position: center;
     -webkit-animation: marquee 200s linear infinite;
     animation: marquee 200s linear infinite;
