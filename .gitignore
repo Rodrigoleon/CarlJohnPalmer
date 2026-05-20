@@ -57,6 +57,11 @@ typings/
 # gatsby files
 .cache/
 public
+.output/
+.netlify/
+.tanstack/
+.superpowers/
+dist/
 
 # Mac files
 .DS_Store

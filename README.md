@@ -1,9 +1,33 @@
 # Carl John Palmer
 
-## The Website
+Modern TanStack Start rebuild of the Carl John Palmer site.
 
-A Gatsby/React powered website for podcasters/influencers.
+## Stack
 
-## To-Do
+- TanStack Start
+- TypeScript
+- Tailwind CSS
+- shadcn/ui with Base UI primitives
+- TanStack Query
+- WordPress REST API as the content source
+- Netlify hosting
 
-- [Upgrading minor patches](https://www.gatsbyjs.org/docs/upgrade-gatsby-and-dependencies/).
+## Development
+
+```bash
+pnpm install
+pnpm dev
+```
+
+The WordPress source defaults to `https://cheatcodes.io/cjp`. Override it with:
+
+```bash
+VITE_WORDPRESS_API_URL=https://example.com/cjp pnpm dev
+```
+
+## Verification
+
+```bash
+pnpm typecheck
+pnpm build
+```
