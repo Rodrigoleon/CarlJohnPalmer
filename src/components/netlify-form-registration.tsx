@@ -1,0 +1,9 @@
+export function NetlifyFormRegistration() {
+  return (
+    <form name="contact" data-netlify="true" hidden>
+      <input type="text" name="name" />
+      <input type="email" name="email" />
+      <textarea name="message" />
+    </form>
+  )
+}
