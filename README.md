@@ -7,7 +7,7 @@ Modern TanStack Start rebuild of the Carl John Palmer site.
 - TanStack Start
 - TypeScript
 - Tailwind CSS
-- shadcn/ui with Base UI primitives
+- Base UI primitives
 - TanStack Query
 - WordPress REST API as the content source
 - Netlify hosting
