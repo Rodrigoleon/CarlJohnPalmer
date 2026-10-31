@@ -4,4 +4,4 @@
 
 [build.environment]
   NODE_VERSION = "24"
-  VITE_WORDPRESS_API_URL = "https://cheatcodes.io/cjp"
+  VITE_WORDPRESS_API_URL = "https://headless.daedalusprime.com"

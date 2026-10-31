@@ -19,7 +19,7 @@ pnpm install
 pnpm dev
 ```
 
-The WordPress source defaults to `https://cheatcodes.io/cjp`. Override it with:
+The WordPress source defaults to `https://headless.daedalusprime.com`. Override it with:
 
 ```bash
 VITE_WORDPRESS_API_URL=https://example.com/cjp pnpm dev
