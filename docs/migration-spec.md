@@ -9,7 +9,7 @@ Rebuild the Carl John Palmer site on a modern React stack while preserving the e
 ## Source Site Findings
 
 - Legacy stack: Gatsby 2, React 16, styled-components, Gatsby WordPress source plugin.
-- New WordPress base: `https://headless.daedalusprime.com/`.
+- New WordPress base: `https://headless.daedalusprime.com/cjp/`.
 - WordPress REST API is live and exposes:
   - Pages: `/wp-json/wp/v2/pages`
   - Posts: `/wp-json/wp/v2/posts`
@@ -46,7 +46,7 @@ Use a clean rebuild. Remove Gatsby, Gatsby plugins, styled-components, old lockf
 
 ## Data Model
 
-The app reads from `VITE_WORDPRESS_API_URL`, defaulting to `https://headless.daedalusprime.com`. WordPress REST helpers normalize titles, excerpts, content HTML, featured media IDs, and media URLs. TanStack Query handles client cache and route loaders prefetch the required content.
+The app reads from `VITE_WORDPRESS_API_URL`, defaulting to `https://headless.daedalusprime.com/cjp`. WordPress REST helpers normalize titles, excerpts, content HTML, featured media IDs, and media URLs. TanStack Query handles client cache and route loaders prefetch the required content.
 
 ## UI Requirements
 

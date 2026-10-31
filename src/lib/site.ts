@@ -5,7 +5,7 @@ export const siteConfig = {
   author: '@carljpalmer',
   wordpressUrl:
     import.meta.env.VITE_WORDPRESS_API_URL?.replace(/\/$/, '') ??
-    'https://headless.daedalusprime.com',
+    'https://headless.daedalusprime.com/cjp',
 }
 
 export const navItems = [

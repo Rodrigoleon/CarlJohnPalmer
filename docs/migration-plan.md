@@ -18,5 +18,5 @@
 
 - Do not run `npm install`.
 - Do not reuse Gatsby runtime code.
-- Use `https://headless.daedalusprime.com` as the default WordPress source.
+- Use `https://headless.daedalusprime.com/cjp` as the default WordPress source.
 - If WordPress has no posts, `/post/$slug` should show not found rather than failing.
